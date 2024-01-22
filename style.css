@@ -1,0 +1,178 @@
+.page-container {
+  min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height for mobile search bars */
+  position: relative;
+}
+
+.content-wrap {
+  padding-top: 128px;
+  padding-bottom: calc(3rem + 128px);
+  margin: 0 0.5rem;
+}
+
+header {
+  width: 100%;
+  height: clamp(66px, 8vw, 74px);
+  background-color: #333333;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+header nav a {
+  color: #00b8d4;
+  margin-left: 2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header nav a.active {
+  color: #b2f5ea;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: white;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  color: white;
+  background-color: #333333; /* Add your desired background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333333;
+}
+
+.profile-image {
+  width: 200px; /* Set the width to double the radius */
+  height: 200px; /* Set the height to double the radius */
+  border-radius: 50%; /* This will create the circular frame */
+  object-fit: cover; /* This will maintain the aspect ratio */
+  border: 2px solid #000; /* Optional: adds a border around the image */
+}
+.intro-text {
+  font-size: 24px; /* Large text */
+  font-weight: bold; /* Bold text */
+  margin-top: 10px; /* Spacing between the image and the text */
+}
+.sub-text {
+  font-size: 16px; /* Large text */
+  margin-top: 5px; /* Spacing between the lines of text */
+}
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.schedule {
+  width: 100%;
+  border-collapse: collapse;
+}
+.schedule th,
+.schedule td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+.schedule th {
+  background-color: #f2f2f2;
+}
+.csc309 {
+  background-color: #add8e6;
+}
+.ece568 {
+  background-color: #ade6b7;
+}
+.ece454 {
+  background-color: #e6add3;
+}
+
+.email-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+  max-width: 300px;
+  padding: 1rem;
+  border: 1px solid #333333;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  margin: 2rem 0;
+}
+
+.project-image {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 1.5rem;
+}
+
+.project-form {
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  justify-content: center;
+  gap: 0.5rem;
+  /* margin: 0 0.5rem; */
+  width: 50%;
+}
+
+.project-form-email {
+  padding: 0.8rem;
+}
+
+.project-form-type {
+  padding: 0.8rem;
+}
+
+.project-form-description {
+  padding: 0.8rem;
+}
+
+.project-form-file {
+  margin: 0.8rem 0;
+}
+
+.project-form-consent {
+  margin: 0.8rem 0;
+}
+
+.project-form-submit {
+  width: 100px;
+  margin: 0.8rem 0;
+}
+
+#consent {
+  transform: scale(1.5);
+}
