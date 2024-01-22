@@ -19,6 +19,10 @@ header {
   align-items: center;
 }
 
+header nav > :last-child {
+  margin-right: 0.5rem;
+}
+
 header nav a {
   color: #00b8d4;
   margin-left: 2rem;
@@ -80,7 +84,9 @@ h1 {
   font-weight: bold;
 }
 .schedule {
-  width: 100%;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
   border-collapse: collapse;
 }
 .schedule th,
