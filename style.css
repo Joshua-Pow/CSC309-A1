@@ -5,6 +5,9 @@
 }
 
 .content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 128px;
   padding-bottom: calc(3rem + 128px);
   margin: 0 0.5rem;
@@ -19,15 +22,15 @@ header {
   align-items: center;
 }
 
-header nav > :last-child {
+/* header nav > :last-child {
   margin-right: 0.5rem;
-}
+} */
 
 header nav a {
   color: #00b8d4;
   margin-left: 2rem;
   text-decoration: none;
-  transition: color 0.3s;
+  /* transition: color 0.3s; */
 }
 
 header nav a.active {
@@ -68,7 +71,7 @@ body {
   height: 200px; /* Set the height to double the radius */
   border-radius: 50%; /* This will create the circular frame */
   object-fit: cover; /* This will maintain the aspect ratio */
-  border: 2px solid #000; /* Optional: adds a border around the image */
+  /* border: 2px solid #000; Optional: adds a border around the image */
 }
 .intro-text {
   font-size: 24px; /* Large text */
