@@ -6,6 +6,7 @@
 
 .content-wrap {
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   padding-top: 128px;
@@ -84,12 +85,15 @@ body {
 }
 h1 {
   font-size: 2em;
+  text-align: center;
   font-weight: bold;
 }
-.schedule {
-  display: block;
-  overflow-x: auto;
+.schedule-wrapper {
+  max-width: 100vw;
+  overflow: auto;
   white-space: nowrap;
+}
+.schedule {
   border-collapse: collapse;
 }
 .schedule th,
@@ -114,6 +118,12 @@ h1 {
 .email-link {
   color: inherit;
   text-decoration: none;
+  border-bottom: 2px dashed #00b8d4;
+  padding-bottom: 1px;
+}
+.email-link:hover {
+  transition: color 0.3s;
+  color: #00b8d4;
 }
 
 .project-gallery {
